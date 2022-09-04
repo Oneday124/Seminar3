@@ -9,4 +9,7 @@ return mult;
 Console.Write("Введите число N: ");
 int N = int.Parse(Console.ReadLine() ?? "0");
 int mult = Multiplication(N, 1);
-Console.WriteLine($"Произведение чисел от 1 до {N} = {mult}");
+if(N <= 0)
+    Console.WriteLine($"Введенное число {N} не допустимо, введите число больше 0");
+else
+    Console.WriteLine($"Произведение чисел от 1 до {N} = {mult}");
