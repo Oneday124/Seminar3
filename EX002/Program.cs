@@ -11,4 +11,4 @@ int Sum(int A, int sum)
 Console.WriteLine("Введите число А: ");
 int A = int.Parse(Console.ReadLine() ?? "0");
 
-Console.WriteLine(Sum(A, 0));
+Console.WriteLine($"Сумма чисел от 1 до {A} = " + Sum(A, 0));
